@@ -115,7 +115,7 @@
             .button {
                 border: none;
                 background: none;
-                font-size: 1.5rem;
+                font-size: 2rem;
                 cursor: pointer;
                 width: 40px;
                 height: 40px;
@@ -133,9 +133,10 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            height: 800px;
-            width: 400px;
-            border-radius: 200px;
+            --height: max(min(calc(100vh - 2rem), calc(2 * (100vw - 132px))), 400px);
+            height: var(--height);
+            min-width: calc(var(--height) / 2);
+            border-radius: calc(var(--height) / 2);
             margin: 1rem;
 
             .button {
