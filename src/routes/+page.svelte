@@ -136,7 +136,7 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            --height: max(min(calc(100vh - 48pt), calc(2 * (100vw - 32px - 108pt))), 400px);
+            --height: max(min(calc(100vh - 48pt), calc(2 * (100vw - 48pt - 108pt))), 400px);
             height: var(--height);
             min-width: calc(var(--height) / 2);
             border-radius: calc(var(--height) / 2);
