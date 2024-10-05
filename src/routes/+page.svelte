@@ -109,17 +109,20 @@
             height: 100%;
             align-items: center;
             justify-content: center;
-            min-width: 72pt;
+            min-width: 108pt;
 
             .button {
                 border: none;
                 background: none;
-                font-size: 18pt;
+                font-size: 48pt;
                 cursor: pointer;
-                width: 40px;
-                height: 40px;
-                border-radius: 20px;
+                width: 64pt;
+                height: 64pt;
+                border-radius: 32pt;
                 -webkit-tap-highlight-color: transparent;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
 
                 &:hover,
                 &:active {
@@ -133,7 +136,7 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            --height: max(min(calc(100vh - 2rem), calc(2 * (100vw - 32px - 72pt))), 400px);
+            --height: max(min(calc(100vh - 48pt), calc(2 * (100vw - 32px - 108pt))), 400px);
             height: var(--height);
             min-width: calc(var(--height) / 2);
             border-radius: calc(var(--height) / 2);
