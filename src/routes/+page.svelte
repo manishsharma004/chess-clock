@@ -120,6 +120,7 @@
                 width: 40px;
                 height: 40px;
                 border-radius: 20px;
+                -webkit-tap-highlight-color: transparent;
 
                 &:hover,
                 &:active {
@@ -147,6 +148,7 @@
                 overflow: hidden;
                 font-size: 2rem;
                 box-shadow: 1px -1px 3px 2px rgba(0, 0, 0, 0.2);
+                -webkit-tap-highlight-color: transparent;
 
                 &.button-black {
                     box-shadow: 1px -1px 3px 2px rgba(0, 0, 0, 0.3);
