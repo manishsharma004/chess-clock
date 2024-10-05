@@ -109,13 +109,12 @@
             height: 100%;
             align-items: center;
             justify-content: center;
-            min-width: 2rem;
-            min-width: 100px;
+            min-width: 72pt;
 
             .button {
                 border: none;
                 background: none;
-                font-size: 2rem;
+                font-size: 18pt;
                 cursor: pointer;
                 width: 40px;
                 height: 40px;
@@ -134,7 +133,7 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            --height: max(min(calc(100vh - 2rem), calc(2 * (100vw - 132px))), 400px);
+            --height: max(min(calc(100vh - 2rem), calc(2 * (100vw - 32px - 72pt))), 400px);
             height: var(--height);
             min-width: calc(var(--height) / 2);
             border-radius: calc(var(--height) / 2);
