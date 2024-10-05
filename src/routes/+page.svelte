@@ -109,8 +109,8 @@
             height: 100%;
             align-items: center;
             justify-content: center;
-            flex: 1;
             min-width: 2rem;
+            min-width: 100px;
 
             .button {
                 border: none;
@@ -145,10 +145,10 @@
                 border: none;
                 overflow: hidden;
                 font-size: 2rem;
-                box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
+                box-shadow: 1px -1px 3px 2px rgba(0, 0, 0, 0.2);
 
                 &.button-black {
-                    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.3);
+                    box-shadow: 1px -1px 3px 2px rgba(0, 0, 0, 0.3);
                 }
 
                 cursor: pointer;
@@ -168,10 +168,10 @@
                 }
 
                 &.selected {
-                    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+                    box-shadow: 2px -2px 5px 2px rgba(0, 0, 0, 0.3);
 
                     &.button-black {
-                        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+                        box-shadow: 2px -2px 5px 2px rgba(0, 0, 0, 0.4);
                     }
                 }
 
