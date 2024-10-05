@@ -17,8 +17,8 @@ const config = {
             // these options are set automatically — see below
             base: '/chess-clock',
             relative: true,
-            pages: 'chess-clock',
-            assets: 'chess-clock',
+            pages: 'build',
+            assets: 'build',
             fallback: undefined,
             precompress: false,
             strict: true
