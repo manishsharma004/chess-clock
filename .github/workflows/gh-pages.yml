@@ -80,9 +80,12 @@ jobs:
         run: |
           git fetch origin gh-pages
           git checkout gh-pages
+          git config user.name manishsharma004@yahoo.com
+          git config user.email manishsharma004@yahoo.com
           rm .gitignore
           git add build/
           git commit -m 'update build files'
+          git push
 
       # - name: Upload artifact
       #   uses: actions/upload-pages-artifact@v3
