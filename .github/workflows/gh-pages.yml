@@ -76,21 +76,21 @@ jobs:
       - name: Build with Svelte-Kit
         run: ${{ steps.detect-package-manager.outputs.runner }} build
         
-      - name: Commit to gh-pages
-        run: |
-          git fetch origin gh-pages
-          git checkout gh-pages
-          git config user.name manishsharma004@yahoo.com
-          git config user.email manishsharma004@yahoo.com
-          rm .gitignore
-          git add build/
-          git commit -m 'update build files'
-          git push
+      # - name: Commit to gh-pages
+      #   run: |
+      #     git fetch origin gh-pages
+      #     git checkout gh-pages
+      #     git config user.name manishsharma004@yahoo.com
+      #     git config user.email manishsharma004@yahoo.com
+      #     rm .gitignore
+      #     git add build/
+      #     git commit -m 'update build files'
+      #     git push
 
-      # - name: Upload artifact
-      #   uses: actions/upload-pages-artifact@v3
-      #   with:
-      #     path: ./build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build
 
   # commit:
   #   runs-on: ubuntu-latest
@@ -101,14 +101,14 @@ jobs:
   #         rm .gitignore
   #         git add build/
   #         git commit -m 'update build files'
-  # Deployment job
-  # deploy:
-  #   environment:
-  #     name: github-pages
-  #     url: ${{ steps.deployment.outputs.page_url }}
-  #   runs-on: ubuntu-latest
-  #   needs: build
-  #   steps:
-  #     - name: Deploy to GitHub Pages
-  #       id: deployment
-  #       uses: actions/deploy-pages@v4
+  Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
